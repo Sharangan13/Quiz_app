@@ -1,13 +1,152 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+}
+
+button {
+  padding: 10px 20px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  color: #fff;
+}
+
+.quiz-container {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  min-height: 400px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.join-screen , 
+.result-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.join-screen h2 {
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.join-screen p {
+  max-width: 350px;
+  color: #555;
+}
+
+.question {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.question .progress-bar {
+  width: 0%;
+  height: 5px;
+  background-color: #3498db;
+}
+
+.question .progress-bar.active {
+  animation: progress 10s linear forwards;
+}
+
+.question-count {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.title {
+  padding: 20px;
+}
+
+.title span {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.option .option {
+  padding: 10px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option .option:hover {
+  background: #bdc3c7;
+}
+
+.option .option.active {
+  background: #3498db;
+  color: #fff;
+}
+
+.control {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+    background: #3498db;
+  }
+
+  80% {
+    width: 80%;
+    background: #e74c3c;
+  }
+
+  100% {
+    width: 100%;
+    background: #e74c3c;
+  }
 }

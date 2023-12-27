@@ -1,0 +1,71 @@
+[
+    {
+        "title":"What does HTML stand for?",
+        "option":["HyperText Markup Language","HighText Machine Language","HyperTransfer Markup Language","HyperText Machine Language"],
+        "correctOptionIndex":"0"
+    },
+    {
+        "title":"Which HTML tag is used to define the structure of an HTML document, including the head and body sections?",
+        "option":[" <html>","<head>","<body>","<structure>"],
+        "correctOptionIndex":"0"
+    },
+    {
+        "title":"In HTML, what is the purpose of the <meta> tag?",
+        "option":[" To create a paragraph","To define metadata about an HTML document","To insert a media file","To define a navigation menu"],
+        "correctOptionIndex":"1"
+    },
+    {
+        "title":"Which attribute is used to provide an alternate text for an image in HTML?",
+        "option":["alt","text","description","img-alt"],
+        "correctOptionIndex":"0"
+    },
+    {
+        "title":"What is the correct HTML tag for creating an unordered list?",
+        "option":["<ol>", "<list>", "<ul>", "<dl>"],
+        "correctOptionIndex":"2"
+    },
+
+
+
+
+
+
+    {
+        "title": "What is the default value of the 'position' property in CSS?",
+        "option": ["static", "relative", "absolute", "fixed"],
+        "correctOptionIndex": "0"
+      },
+
+      {
+        "title": "Which CSS property is used to control the transparency of an element?",
+        "option": ["opacity", "transparency", "visibility", "alpha"],
+        "correctOptionIndex": "0"
+      },
+      
+      {
+        "title": "What is the purpose of the 'z-index' property in CSS?",
+        "option": ["To control the vertical alignment of an element",
+          "To control the stacking order of positioned elements",
+          "To set the rotation angle of an element",
+          "To define the width of an element"],
+        "correctOptionIndex": "1"
+      },
+
+      {
+        "title": "Which CSS property is used for styling the font of an element?",
+        "option": ["font-family", "text-font", "font-style", "text-style"],
+        "correctOptionIndex": "0"
+      },
+
+      {
+        "title": "What is the purpose of the 'box-sizing' property in CSS?",
+        "option": [
+          "To control the visibility of an element",
+          "To specify the size of a box",
+          "To define the shadow of an element",
+          "To include or exclude padding and border in the element's total width and height"
+        ],
+        "correctOptionIndex": "3"
+      }
+    
+]
